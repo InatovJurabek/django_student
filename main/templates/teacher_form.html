@@ -6,7 +6,6 @@
 </head>
 <body>
     <h2>{% if object %} O'qituvchini tahrirlash {% else %} Yangi o'qituvchi qo'shish {% endif %}</h2>
-
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
