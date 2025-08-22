@@ -2,9 +2,10 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from django.urls import reverse_lazy
 from .models import Teacher, Student, Course, Enrollment
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'user/index.html')
 
 class TeacherListView(ListView):
     model = Teacher
