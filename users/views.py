@@ -35,7 +35,6 @@ def course_list_create(request):
 
 
 
-
 def user_login_view(request):
     if request.method == 'GET':
         return render (request, 'users/login.html')
